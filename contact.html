@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Registration</title>
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="container">
+        <a href="index.html">x</a>
+      <h2>Contact Me</h2>
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="username">Name</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <input type="text" id="message" name="message" required>
+        </div>
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+<style>
+    *{
+  box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+body {
+  font-family: "Cambay", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: url('2.png');
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  }
+
+.container {
+    max-width: 400px;
+    margin: 200px auto;
+    background-color:  #4e525a49;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+
+  }
+  h2 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #181818;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .submit-btn:hover {
+    background-color: #313131;
+  }
+  
+  .or{
+    text-align: center;
+  }
+  
+  p{
+    text-align: center;
+    color: white;
+  }
+.login{
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+  .container {
+      max-width: 80%;
+  }
+  .submit-btn{
+      min-width: 80%;
+  }
+ body{
+   background-image: url(1.png);
+  }
+}
+
+</style>
+
+
+
+
+</body>
+</html>
